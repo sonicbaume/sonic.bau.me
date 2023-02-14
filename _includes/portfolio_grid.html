@@ -10,10 +10,12 @@
     <div class="portfolio-flex-row">
       {% for post in site.posts %}
       <div class="portfolio-flex-item portfolio-item">
-        <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+        <a href="{{ post.link }}" class="portfolio-link" target="_blank">
+        <!-- <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal"> -->
           <div class="caption">
             <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x"></i>
+              <p><i class="fa fa-download"></i> {{ post.downloads }}</p>
+              <p><i class="fa fa-star"></i> {{ post.rating }}</p>
             </div>
           </div>
           <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
