@@ -9,7 +9,7 @@ const circleCount = 30;
 const vertSep = 100
 const strokeWidth = 5
 const distance = 5
-const speed = 0.2
+const speed = 0.3
 const dopplerFactor = 0.4
 
 const radius = (height-vertSep)/2
