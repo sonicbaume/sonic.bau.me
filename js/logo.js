@@ -1,8 +1,10 @@
 const canvas = document.getElementById("logo");
 const ctx = canvas.getContext("2d");
 const start = new Date();
-const width = ctx.canvas.width;
-const height = ctx.canvas.height;
+const dpr = window.devicePixelRatio || 1;
+const width = ctx.canvas.width * dpr;
+const height = ctx.canvas.height * dpr;
+ctx.scale(1/dpr, 1/dpr)
 
 // params
 const circleCount = 30;
